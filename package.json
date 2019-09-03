@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "npm run tailwind:css && vue-cli-service serve",
+    "build": "npm run tailwind:css && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "tailwind:css": "./node_modules/.bin/tailwind build ./src/assets/css/main.css -c ./tailwind.config.js -o ./public/css/styles.css"
   },
   "dependencies": {
     "core-js": "^2.6.5",
