@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'heading',
+  name: 'base-heading',
   render: function(createElement) {
     return createElement(
       'h' + this.level, // tag name
