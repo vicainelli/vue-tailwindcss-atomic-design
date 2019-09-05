@@ -1,11 +1,16 @@
 <template>
   <div>
-    <h1 class="text-2xl">HOME</h1>
+    <heading :level="1">Home</heading>
   </div>
 </template>
 
 <script>
+import Heading from '@/components/atoms/Heading'
+
 export default {
-  name: 'page-home'
+  name: 'page-home',
+  components: {
+    heading: Heading
+  }
 }
 </script>
