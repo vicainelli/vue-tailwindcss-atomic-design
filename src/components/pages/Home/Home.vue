@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import Heading from '@/components/atoms/Heading'
+import BaseHeading from '@/components/atoms/BaseHeading'
 
 export default {
   name: 'page-home',
   components: {
-    heading: Heading
+    heading: BaseHeading
   }
 }
 </script>
