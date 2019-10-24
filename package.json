@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "npm run tailwind:css && vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "npm run tailwind:css && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "tailwind:css": "./node_modules/.bin/tailwind build ./src/assets/css/main.css -c ./tailwind.config.js -o ./public/css/styles.css",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -15,6 +16,10 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^4.1.0 || ^5.0.0",
+    "@storybook/addon-knobs": "^4.1.0 || ^5.0.0",
+    "@storybook/addon-links": "^4.1.0 || ^5.0.0",
+    "@storybook/addon-notes": "^4.1.0 || ^5.0.0",
     "@tailwindcss/custom-forms": "^0.2.0",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
@@ -30,6 +35,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
     "prettier": "^1.18.2",
+    "vue-cli-plugin-storybook": "^0.6.1",
     "vue-server-renderer": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   }
