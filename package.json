@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "npm run tailwind:css && vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "npm run tailwind:css && vue-cli-service build",
     "lint": "vue-cli-service lint",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "tailwind:css": "./node_modules/.bin/tailwind build ./src/assets/css/main.css -c ./tailwind.config.js -o ./public/css/styles.css",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
